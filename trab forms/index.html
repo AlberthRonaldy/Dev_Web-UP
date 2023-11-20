@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style: none;   /*Vai tirar os pontinhos do lado -->*/
+            padding: 0px;
+        }
+        li {
+            float: left;        /*Vai tirar a atribuição de e vai subir as linhas para cima*/
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;    /*Ele expande os 2 TD e coloca uma linha do lado da outra*/
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: gray;
+            /*color: white se quiser trocar a cor das letras dentro do meu título com cor*/
+        }
+        footer {
+            text-align: center;
+        }
+        footer div {
+            background-color: #000000;
+
+        }
+    </style>
+    <title>Exercício 4</title>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Cadastro e Listagem de Pontos</h1>
+        <hr>
+        <form>
+            <label for="texto">Motivo: </label>
+            <input type="text" name="texto" id="textoID">
+            <label for="data">Data: </label>
+            <input type="date" name="data">
+            <label for="selecionar">Tipo: </label>
+            <select name="selecionar">
+                <option value="0">Entrada</option>
+                <option value="1">Saída</option>
+            </select>
+            <input type="submit" value="Registrar Ponto">
+            <hr>
+        </form>
+        <ul>
+            <li><b>Nome: </b>José da Silva</li>
+            <li><b>Cargo: </b>Portaria</li>
+        </ul>
+        <table>
+            <caption><small>Registros de ponto.</small></caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Data</th>
+                    <th rowspan="2">Entrada</th>
+                    <th rowspan="2">Saída</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">01/08/2023</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1">02/08/2023</td>
+                <td colspan="2">&nbsp; Folga</td>
+            </tr>
+            <tr>
+                <td rowspan="2">03/08/2023</td>
+                <td>08:30</td>
+                <td>17:45</td>
+            </tr>
+            <tr>
+                <td>18:30</td>
+                <td>22:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1">04/08/2023</td>
+                <td colspan="2">&nbsp; Folga</td>
+            </tr>
+            <tr>
+                <td rowspan="2">05/08/2023</td>
+                <td>10:15</td>
+                <td>18:30</td>
+            </tr>
+            <tr>
+                <td>19:15</td>
+                <td>21:45</td>
+            </tr>
+            <tr>
+                <td rowspan="1">06/08/2023</td>
+                <td colspan="2">&nbsp; Folga</td>
+            </tr>
+            <tr>
+                <td rowspan="2">07/08/2023</td>
+                <td>09:20</td>
+                <td>17:30</td>
+            </tr>
+            <tr>
+                <td>18:15</td>
+                <td>21:00</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <hr>
+    <p>Sistema de gestão de ponto&reg;</p>
+    <div>Sistema de gestão de ponto&reg;</div>
+</footer>    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula display</title>
+</head>
+<body>
+<main class="container">
+    <section>
+        <h1>Aula Display</h1>
+        <div class="block">
+            <h2>Conteúdo Display Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque porro iusto ducimus repudiandae ab optio nostrum odit, assumenda illo modi recusandae autem numquam veritatis repellendus tempore commodi soluta aut harum.</p>
+        </div>
+        <span class="block azul">Display Block</span>
+        <div>
+            <h2>Display Inline</h2>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline</div>
+            <div class="inline">Display inline</div>
+        </div>
+        <div class="">
+            <h2>Display inline-block</h2>
+            <div class="inline-block">Display <br> inline block</div>
+            <div class="inline-block">Display <br> inline block</div>
+            <div class="inline-block">Display <br> inline block</div>
+            <div class="inline-block">Display <br> inline block</div>
+        </div>
+        <br>
+        <div id="mostrar" class="none">
+            <h2>Display None </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem autem nam fuga tempore tempora nesciunt deleniti unde voluptate atque ducimus repellendus quas, delectus dignissimos fugiat earum, similique deserunt consequuntur perspiciatis?</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <form>
+            <label for="mostrar">Mostrar: </label>
+            <input type="radio" name="exibir" id="mostrar" onclick="document.getElementById('mostrar').classList.remove('none')">
+            <label for="Nmostrar">Não mostrar: </label>
+            <input type="radio" name="exibir" id="Nmostrar" onclick="document.getElementById('mostrar').classList.add('none')">
+        </form>
+    </section>
+</main>
+    
+</body>
+</html>
